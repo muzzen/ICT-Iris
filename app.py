@@ -27,4 +27,4 @@ def result():
                            species=predicted_species_name)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run()
