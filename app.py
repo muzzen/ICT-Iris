@@ -21,7 +21,7 @@ def result():
         result = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
    
         return render_template('result.html', 
-                               species= result)
+                               species= result[0])
     else:
         return render_template('result.html')
 
