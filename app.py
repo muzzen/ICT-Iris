@@ -15,12 +15,14 @@ def result():
         sepal_width = float(request.form.get('sepal_width'))
         petal_length = float(request.form.get('petal_length'))
         petal_width = float(request.form.get('petal_width'))
-        
+    
+        user_input = [[sepal_length, sepal_width, petal_length, petal_width]] 
+
         model = pickle.load(open('classifier.pkl','rb'))
     
-        user_input = [[sepal_length, sepal_width, petal_length, petal_width]]        
-    
-        predicted_species_name = model.predict(user_input)[0]
+        result = model.predict([[user_input]])
+
+        predicted_species_name = result[0]
     
         return render_template('result.html', 
                                species=predicted_species_name)
