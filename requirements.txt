@@ -3,3 +3,5 @@ Gunicorn
 numpy
 pandas
 scikit-learn
+pickle
+xlrd
