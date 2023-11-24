@@ -1,0 +1,82 @@
+body{
+    background-repeat: no-repeat;
+    background-position: 25cm 10cm;
+    background-size: 40%;
+    margin: 150px 200px;
+    }
+
+body#result{
+    background-repeat: no-repeat;
+    background-position: 25cm 10cm;
+    background-size: 40%;
+    margin: 150px 200px;
+    text-align: center;
+    }
+    
+div{
+    border: 1px #cccccc solid;
+    text-align: center;
+    padding-top: 50px;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    border-radius: 20px 50px;
+    }
+
+.wordings{
+    border: 0px;
+    position: absolute;
+    text-align: center;
+    left: 26cm;
+    top: 150px;
+    width: 800px;
+    justify-content: center;
+    line-height: 30px;
+    }
+
+input[type=text]{
+    margin: 10px;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    }
+
+input[type=submit]{
+    color: #ffffff;
+    margin-top: 25px;
+    padding: 15px 32px;
+    text-decoration: none;
+    background-color: darkorchid;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+input[type=submit]:hover{
+    background-color: orchid;
+    font-weight: bold;
+    }
+
+
+h1 {
+    color:darkorchid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: midnightblue;
+}
+
+label {
+    color: rgb(58, 52, 52);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+a#result {
+    font-size: 15px;
+    color:rgb(104, 100, 100);
+    text-decoration: none;
+    vertical-align: bottom;
+}

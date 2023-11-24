@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home:Know your Iris</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+         </head>
+    <body background="/static/images/iris-background.jpg">
+        <h1>Know your Iris!</h1>
+        <div>
+		<form action="/result" method="POST">
+		    <label for="sepal_length">Sepal Length:</label>
+		    <input type="text" inputmode="numeric" id="sepal_length" name="sepal_length" placeholder="in cm" required><br>
+	    
+		    <label for="sepal_width">Sepal Width:&nbsp;</label>
+		    <input type="text" inputmode="numeric" id="sepal_width" name="sepal_width"  placeholder="in cm" required><br>
+	    
+		    <label for="petal_length">Petal Length:</label>
+		    <input type="text" inputmode="numeric" id="petal_length" name="petal_length"  placeholder="in cm" required><br>
+	    
+		    <label for="petal_width">Petal Width:&nbsp;</label>
+		    <input type="text" inputmode="numeric" id="petal_width" name="petal_width"  placeholder="in cm" required><br>
+	    
+		    <input type="submit" value="Predict">
+		</form>        
+        </div>
+        <span class="wordings"><cite>"Flowers don't worry about how they're going to bloom.<br>
+             They just open up and turn toward the light and that makes them beautiful"</cite></span>
+    </body>
+</html>
