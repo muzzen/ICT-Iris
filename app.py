@@ -11,11 +11,10 @@ def home():
 @app.route('/result', methods=['GET','POST'])
 def result():
     if request.method == 'POST':
-        sepal_length = float(request.form.get('sepal_length'))
-        sepal_width = float(request.form.get('sepal_width'))
-        petal_length = float(request.form.get('petal_length'))
-        petal_width = float(request.form.get('petal_width'))
-
+        sepal_length = float(request.form['sepal_length'])
+        sepal_width = float(request.form['sepal_width'])
+        petal_length = float(request.form.['petal_length'])
+        petal_width = float(request.form.['petal_width'])
 
         model = pickle.load(open('classifier.pkl','rb'))
     
